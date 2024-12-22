@@ -13,13 +13,13 @@ export const Navbar = () => {
     <nav className="navbar navbar-light bg-light">
       <div className="container">
         <Link to="/">
-          <span className="navbar-brand mb-0 h1">React Boilerplate</span>
+          <button className="btn btn-primary px-2 py-2">React Boilerplate</button>
         </Link>
         <div className="ml-auto">
           <Link to="/demo">
-            <button className="btn btn-primary">Check the Context in action</button>
+            <button className="btn btn-primary px-2 py-2">Check the Context in action</button>
           </Link>
-          <button className="btn btn-danger ml-2" onClick={handleLogout}>
+          <button className="btn btn-danger ml-2 px-2 py-2" onClick={handleLogout}>
             Cerrar sesión
           </button>
         </div>
