@@ -17,6 +17,10 @@ export const Home = () => {
             <h2 className="text-center">Login</h2>
             <FormularioUsuario type="login" />
 
+            <button className="btn btn-primary mt-3 mx-3" onClick={handleClick}>
+                Ir a perfil
+            </button>
+
             <p
                 onClick={handleClick}
                 style={{ cursor: "pointer", color: "blue", textDecoration: "underline" }}
