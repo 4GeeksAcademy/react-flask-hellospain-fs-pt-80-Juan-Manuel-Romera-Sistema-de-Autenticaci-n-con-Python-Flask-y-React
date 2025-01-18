@@ -19,7 +19,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			// Use getActions to call a function within a fuction
 			getUserInfo: async () => {
 				try {
-					const resp = await fetch('https://automatic-guacamole-xg5r7q46g6rf9qq4-3001.app.github.dev/api/user_info', {
+					const resp = await fetch('https://bug-free-doodle-x59j9w77pprx2vqv4-3001.app.github.dev/api/user_info', {
 						headers: {
 							'Authorization': `Bearer ${localStorage.getItem('token')}`
 						}
@@ -33,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			login: async formData => {
 				try {
-					const resp = await fetch('https://automatic-guacamole-xg5r7q46g6rf9qq4-3001.app.github.dev/api/login', {
+					const resp = await fetch('https://bug-free-doodle-x59j9w77pprx2vqv4-3001.app.github.dev/api/login', {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			register: async formData => {
 				try {
-					const resp = await fetch('https://automatic-guacamole-xg5r7q46g6rf9qq4-3001.app.github.dev/api/register', {
+					const resp = await fetch('https://bug-free-doodle-x59j9w77pprx2vqv4-3001.app.github.dev/api/register', {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			getBooks: async () => {
 				try {
-					const resp = await fetch('https://automatic-guacamole-xg5r7q46g6rf9qq4-3001.app.github.dev/api/books')
+					const resp = await fetch('https://bug-free-doodle-x59j9w77pprx2vqv4-3001.app.github.dev/api/books')
 					if (!resp.ok) throw new Error('error fetching books')
 					const data = await resp.json()
 					setStore({books: data.payload})
